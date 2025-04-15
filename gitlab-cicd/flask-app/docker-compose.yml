@@ -1,0 +1,7 @@
+services:
+  flask-app:
+    image: 579654570707.dkr.ecr.ap-south-1.amazonaws.com/flask-app:latest
+    container_name: web_app
+    restart: unless-stopped
+    ports:
+      - 8080:8080
